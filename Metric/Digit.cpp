@@ -7,9 +7,9 @@ int Digit::increment() {
 }
 
 std::string Digit::get_value() const {
-	std::string value(1, alphabet[j]);
-	value = value + std::to_string(i);
-	return value;
+	std::string s = "";
+	s = s + alphabet[j-1] + std::to_string(i);
+	return s;
 }
 
 std::pair<int, int> Digit::get_indexes() const {
