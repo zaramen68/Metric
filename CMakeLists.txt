@@ -1,9 +1,10 @@
-﻿# CMakeList.txt: файл проекта CMake верхнего уровня; проведите глобальную конфигурацию
-# и включите сюда подпроекты.
-#
+﻿
 cmake_minimum_required (VERSION 3.8)
 
 project ("Metric")
 
 # Включите подпроекты.
 add_subdirectory ("Metric")
+
+add_executable(metric)
+target_sources(metric PRIVATE main.cpp Metric.cpp Metric.h Digit.cpp Digit.h)

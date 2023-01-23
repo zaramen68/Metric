@@ -3,7 +3,7 @@
 #
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (Metric "Metric.cpp" "Metric.h" "Digit.h" "Digit.cpp" )
+add_executable (Metric "Metric.cpp" "Metric.h" "Digit.h" "Digit.cpp"  "main.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Metric PROPERTY CXX_STANDARD 20)

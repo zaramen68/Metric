@@ -6,7 +6,9 @@ public:
 	Digit(): i(1), j(1) {}
 	Digit(int i_, int j_): i(i_), j(j_) {}
 	int increment();
-	std::string get_value() {};
+	std::string get_value() const;
+	std::pair<int, int> get_indexes() const;
+
 private:
 	int i, j;
 	const char alphabet[26]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 
