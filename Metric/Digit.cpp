@@ -2,7 +2,7 @@
 
 int Digit::increment() {
 	if (i < 9) { i++; return 0; }
-	else if (j < 26) { j++; return 0; }
+	else if (j < 26) { i = 1; j++; return 0; }
 	else { i = 1; j = 1; return 1; }
 }
 
